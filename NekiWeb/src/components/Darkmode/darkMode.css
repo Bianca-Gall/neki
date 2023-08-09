@@ -1,0 +1,97 @@
+/* .body {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+} */
+
+.labelDarkMode {
+  width: 60px; 
+  height: 30px; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7f7f7;
+  border-radius: 15px;
+  box-shadow: inset 0px 3px 10px #243039, inset 0px -3px 10px #f7f7f7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.labelDarkMode:after {
+  content: "";
+  width: 20px; /* Tamanho do círculo */
+  height: 20px; /* Tamanho do círculo */
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: linear-gradient(180deg, #ffa489, #fcbc34);
+  border-radius: 10px; /* Metade do tamanho do círculo */
+  box-shadow: 0px 3px 10px #242939;
+  transition: 0.3s;
+}
+
+.inputDarkMode {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.inputDarkMode:checked + .labelDarkMode {
+  background: #243039;
+}
+
+.inputDarkMode:checked + .labelDarkMode:after {
+  right: 55px; /* Posição do círculo quando ativado */
+  transform: translateX(100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.labelDarkMode:active:after {
+  width: 30px; /* Tamanho do círculo ao clicar */
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: #f7f7f7;
+  z-index: -1;
+  position: absolute;
+  transition: 0.3s;
+}
+
+.inputDarkMode:checked + .labelDarkMode + .background {
+  background: #243039;
+}
+
+.sun {
+  left: 37px; 
+  color: #243039;
+  transition: 0.3s;
+  position: absolute;
+  width: 10px;
+  top: 7px;
+  z-index: 100;
+}
+
+.moon {
+  right: 0; 
+  color: #f7f7f7;
+  transition: 0.3s;
+  position: absolute;
+  width: 55px;
+  top: 7px;
+  z-index: 100;
+}
+
+/* .inputDarkMode:checked + .sun {
+  color: #7e7e7e;
+}
+
+.inputDarkMode:checked + .moon {
+  color: #fff;
+} */

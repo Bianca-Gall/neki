@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15%;
+}
+.box {
+  position: absolute;
+  background-color: #fcbc34;
+  width: 30%;
+  height: 70%;
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.4rem;
+  flex-wrap: wrap;
+}
+.login {
+  color: #243039;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Victor mono", monospace;
+}
+.labelLogin {
+  color: #243039;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  font-family: "Victor mono", monospace;
+  padding-right: 11vw;
+}
+input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #243039;
+  outline: none;
+  border: 2px solid transparent;
+  font-family: "Victor mono", monospace;
+  cursor: text;
+}
+input:focus,
+input:hover {
+  outline: none;
+  border-color: #0097b2;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 0 4px #019db91e;
+  cursor: text;
+}
+
+button {
+  background-color: #243039;
+  color: #fcbc34;
+  padding: 10px;
+  /* border: 2px solid #0097b2; */
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 2rem;
+  font-family: "Victor mono", monospace;
+}
+button:focus,
+button:hover {
+  outline: none;
+  border-color: #0097b2;
+  box-shadow: 0 0 0 4px #019db91e;
+}

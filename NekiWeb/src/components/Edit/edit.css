@@ -1,0 +1,15 @@
+.ratingStar {
+    position: relative;
+  width: 100%;
+  color: #0097b2;
+  cursor: pointer;
+  margin: 3px;
+}
+.filledHeart,
+.emptyHeart {
+    position: absolute;
+  display: flex;
+  align-items: flex-start;
+  padding-left: 4px;
+  color: #243039;
+}
